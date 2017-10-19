@@ -6,6 +6,8 @@ var storages = [
 	require('../storages/cookieStorage'), 
 	require('../storages/memoryStorage'),
 ]
-var plugins = []
+var plugins = [
+	require('../plugins/operations')
+]
 
 module.exports = engine.createStore(storages, plugins)

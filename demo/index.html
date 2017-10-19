@@ -1,0 +1,15 @@
+<html>
+
+<head>
+    <title>Demo</title>
+    <script type="text/javascript" src="../dist/store.bundle.js"></script>
+</head>
+
+<body>
+	<p>running..</p>
+    <script type="text/javascript">
+    window.store.set('user', { name: 'Marcus' });
+    console.log('window.store.get(\'user\') =>', window.store.get('user'));
+    </script>
+</body>
+</html>
