@@ -14,7 +14,7 @@ gulp.task('default', ['del'], () => {
   	standalone: 'store'
   })
     .pipe(source('store.bundle.js'))
-    .pipe(buffer())
-  	.pipe(uglify())
+    // .pipe(buffer())
+  	// .pipe(uglify())
     .pipe(gulp.dest('dist'));
 });
